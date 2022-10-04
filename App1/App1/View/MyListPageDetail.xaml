@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.View.MyListPageDetail">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame Margin="5,20,5,20" BackgroundColor="Wheat" HorizontalOptions="Center" VerticalOptions="Center">
+                <Grid RowDefinitions="*,auto,auto,auto,auto,auto" ColumnDefinitions="*,auto">
+             <Image x:Name="Myimage" Grid.Row="0" Grid.ColumnSpan="2" Margin="0,20,5,0"/>
+                    <Label Text="Id :" Grid.Row="1" FontAttributes="Bold" FontSize="Medium" Grid.Column="0" TextColor="Black" />
+                    <Label x:Name="Myid" Grid.Row="1" FontAttributes="Bold" FontSize="Medium" Grid.Column="1" HorizontalTextAlignment="Start" />
+                    <Label Text="FirstName:" Grid.Row="2" FontAttributes="Bold" FontSize="Medium" Grid.Column="0"/>
+
+                    <Label x:Name="myname"  Grid.Row="2" FontAttributes="Bold" FontSize="Medium" Grid.Column="1" HorizontalTextAlignment="Start"/>
+                    <Label Text="LastName:" Grid.Row="3" FontAttributes="Bold" FontSize="Medium" Grid.Column="0"/>
+
+                    <Label x:Name="maylname"  Grid.Row="3" FontAttributes="Bold" FontSize="Medium" Grid.Column="1" HorizontalTextAlignment="Start"/>
+                    <Label Text="Email:" Grid.Row="4" FontAttributes="Bold" FontSize="Medium" Grid.Column="0"/>
+
+                    <Label x:Name="myemail"  Grid.Row="4" FontAttributes="Bold" FontSize="Medium" Grid.Column="1" HorizontalTextAlignment="Start"/>
+                    
+                </Grid>
+            </Frame>
+          
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

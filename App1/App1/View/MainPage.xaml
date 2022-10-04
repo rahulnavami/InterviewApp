@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.View.MainPage"
+             >
+   
+   
+    <ContentPage.Content>
+        
+        
+        <StackLayout>
+            <ListView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  ItemTapped="OnItemSelected"
+                      x:Name="userListView" Margin="4,30,5,40">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell Height="28">
+                            
+                            <StackLayout Orientation="Horizontal">
+                                
+                                <Image Source="{Binding avatar}" />
+                                <Label Text="{Binding id}"/>
+                                <Label Text="{Binding first_name}"/>
+                                <Label Text="{Binding last_name}"/>
+                                <Label Text="{Binding email}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
